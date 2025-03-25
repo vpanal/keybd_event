@@ -33,6 +33,7 @@ func (k *KeyBonding) Press() error {
 	}
 	for _, key := range k.keys {
 		downKey(key)
+		upKey(key)
 	}
 	return nil
 }
